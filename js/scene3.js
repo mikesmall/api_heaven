@@ -1,9 +1,12 @@
 function scene3() {
 
   // Setup Stage
-  mySrc = desert.getAttribute('src')
-  stageImg = document.querySelector('#stage-img')
-  stageImg.setAttribute('src', mySrc)
+  var stage             = document.querySelector('#stage');
+  var grassyField       = document.querySelector('#grassy-field');
+  var stageImg          = stage.querySelector('#stage-img');
+  var grassyFieldImgSrc = grassyField.getAttribute('src');
+
+  stageImg.setAttribute('src', grassyFieldImgSrc);
 
   // Using the same steps as you used to construct Scene 2, create a scene with Danerys and Drogo playing catch with the dragon's egg.
 
@@ -64,21 +67,78 @@ function scene3() {
   dragonEgg.style.top       = '70%';
   dragonEgg.style.left      = '28%';
   dragonEgg.style.height    = '15%';
-  // dragonEgg.style.transform = 'rotateY(150deg)';
+
+  // Let's play catch:
+
+  for (i=0; i<4; i++) {
+
+  // Danerys throws the egg to Drogo:
+
+    frame(function() {
+      dragonEgg.style.top = '70%'
+      dragonEgg.style.left = '28%'
+      dragonEgg.style.transform = 'rotateZ(100deg)'
+    })
+
+    frame(function() {
+      dragonEgg.style.top = '70%'
+      dragonEgg.style.left = '36%'
+      dragonEgg.style.transform = 'rotateZ(220deg)'
+    })
+
+    frame(function() {
+      dragonEgg.style.top = '68%'
+      dragonEgg.style.left = '41%'
+      dragonEgg.style.transform = 'rotateZ(140deg)'
+    })
+
+    frame(function() {
+      dragonEgg.style.top = '68%'
+      dragonEgg.style.left = '47%'
+      dragonEgg.style.transform = 'rotateZ(260deg)'
+    })
+
+    frame(function() {
+      dragonEgg.style.top = '64%'
+      dragonEgg.style.left = '53%'
+      dragonEgg.style.transform = 'rotateZ(180deg)'
+    })
+
+  // Drogo throws the egg back:
+
+    frame(function() {
+      dragonEgg.style.top = '64%'
+      dragonEgg.style.left = '53%'
+      dragonEgg.style.transform = 'rotateZ(180deg)'
+    })
+
+    frame(function() {
+      dragonEgg.style.top = '68%'
+      dragonEgg.style.left = '47%'
+      dragonEgg.style.transform = 'rotateZ(260deg)'
+    })
+
+    frame(function() {
+      dragonEgg.style.top = '68%'
+      dragonEgg.style.left = '41%'
+      dragonEgg.style.transform = 'rotateZ(140deg)'
+    })
+
+    frame(function() {
+      dragonEgg.style.top = '70%'
+      dragonEgg.style.left = '36%'
+      dragonEgg.style.transform = 'rotateZ(220deg)'
+    })
+
+    frame(function() {
+      dragonEgg.style.top = '70%'
+      dragonEgg.style.left = '28%'
+      dragonEgg.style.transform = 'rotateZ(100deg)'
+    })
 
 
-  // Action!
+  // End of 'play catch' for-loop
+  }
 
-  // Stage direction 1
-
-  frame(function() {
-
-  })
-
-  // Stage direction 2
-
-  frame(function() {
-
-  })
-
+// End of DOM-load wrapper function (do not delete):
 }
