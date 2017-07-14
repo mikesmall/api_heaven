@@ -59,6 +59,7 @@ function scene2() {
   joffreyContainer.append(king);
 
   // Setup Props
+  // Prop 1
   var sword = document.querySelector('#sword');
   stage.append(sword);
   sword.style.position  = 'absolute';
@@ -67,22 +68,35 @@ function scene2() {
   sword.style.height    = '5%';
   sword.style.transform = 'rotateY(150deg)';
 
-  // Prop 1
-
-  // Prop 2
-
   // Action!
-
-  // Stage direction 1
-
+  // Stage direction 1 -- Existing Start Frame
   frame(function() {
-
+    sword.style.top = '77%'
+    sword.style.left = '31%'
   })
 
-  // Stage direction 2
-
+  // 'Two Final Frames' #1
   frame(function() {
+    sword.style.top = '74%'
+    sword.style.left = '36%'
+  })
 
+  // New Middle Frame
+  frame(function() {
+    sword.style.top = '71%'
+    sword.style.left = '41%'
+  })
+
+  // 'Two Final Frames' #2
+  frame(function() {
+    sword.style.top = '68%'
+    sword.style.left = '47%'
+  })
+
+  // Stage direction 2 -- Existing End Frame
+  frame(function() {
+    sword.style.top = '64%'
+    sword.style.left = '53%'
   })
 
 }
