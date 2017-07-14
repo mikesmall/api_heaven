@@ -69,7 +69,8 @@ function scene2() {
   sword.style.transform = 'rotateY(150deg)';
 
   // Action!
-  // Stage direction 1 -- Existing Start Frame
+  // Stage direction 1 -- Ned throws the sword
+  // Existing Start Frame
   frame(function() {
     sword.style.top = '77%'
     sword.style.left = '31%'
@@ -93,10 +94,39 @@ function scene2() {
     sword.style.left = '47%'
   })
 
-  // Stage direction 2 -- Existing End Frame
+  // Existing End Frame
   frame(function() {
     sword.style.top = '64%'
     sword.style.left = '53%'
   })
+
+  // Stage Direction 2 -- Joffrey's head goes away
+  frame(function() {
+    joffrey.style.top = 0
+    joffrey.style.left = '33%'
+  })
+
+  frame(function() {
+    joffrey.style.top = '17%'
+    joffrey.style.left = '90%'
+  })
+
+  frame(function() {
+    joffrey.style.top = '35%'
+    joffrey.style.left = '160%'
+  })
+
+  frame(function() {
+    joffrey.style.top = '55%'
+    joffrey.style.left = '230%'
+  })
+
+  frame(function() {
+    joffrey.style.top = '75%'
+    joffrey.style.left = '300%'
+  })
+
+
+
 
 }
