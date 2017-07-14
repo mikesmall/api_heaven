@@ -38,6 +38,24 @@ function scene3() {
   var drogo             = document.querySelector( '#drogo' );
   var bulkyMan          = document.querySelector( '#bulky-man' );
 
+  drogoContainer.style.position = 'absolute';
+  drogoContainer.style.width    = '8%';
+  drogoContainer.style.height   = '31%';
+  drogoContainer.style.top      = '55%';
+  drogoContainer.style.left     = '55%';
+
+  drogo.style.position  = 'absolute';
+  drogo.style.top       = 0;
+  drogo.style.left      = '10%';
+  drogo.style.width     = '75%';
+
+  bulkyMan.style.position = 'absolute';
+  bulkyMan.style.bottom   = 0;
+
+  stage.append(drogoContainer);
+  drogoContainer.append(drogo);
+  drogoContainer.append(bulkyMan);
+
   // Setup Props
 
   // Prop 1
