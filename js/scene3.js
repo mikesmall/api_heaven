@@ -57,10 +57,15 @@ function scene3() {
   drogoContainer.append(bulkyMan);
 
   // Setup Props
+  // The egg is in the #props section.
+  var dragonEgg = document.querySelector('#egg');
+  stage.append(dragonEgg);
+  dragonEgg.style.position  = 'absolute';
+  dragonEgg.style.top       = '70%';
+  dragonEgg.style.left      = '28%';
+  dragonEgg.style.height    = '15%';
+  // dragonEgg.style.transform = 'rotateY(150deg)';
 
-  // Prop 1
-
-  // Prop 2
 
   // Action!
 
